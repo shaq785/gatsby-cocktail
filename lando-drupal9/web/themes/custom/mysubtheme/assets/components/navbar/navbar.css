@@ -1,0 +1,60 @@
+/*
+ |--------------------------------------------------------------------------
+ | Helper mixins, feel free to add/remove any that you might not use
+ | Won't be rendered in the output if not used
+ |--------------------------------------------------------------------------
+ */
+.navbar .form-inline .form-actions {
+  display: none; }
+
+.toolbar-oriented .toolbar-bar {
+  z-index: 1200; }
+
+.toolbar-horizontal .toolbar-menu.nav {
+  float: left; }
+
+.navbar-toggle {
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.3s cubic-bezier(0.25, 0.75, 0.75, 1);
+  margin-right: 0;
+  float: none;
+  margin-left: auto;
+  z-index: 9;
+  border: 0;
+  background-color: transparent; }
+  @media (min-width: 1200px) {
+    .navbar-toggle {
+      display: none; } }
+  .navbar-toggle .sr-only {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+    width: 1px; }
+  .navbar-toggle .icon-bar {
+    display: block;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.25, 0.75, 0.75, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #adb5bd;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px; }
+  .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px; }
+  .navbar-toggle.active .icon-bar:nth-of-type(2) {
+    transform: rotate(45deg);
+    top: 6px; }
+  .navbar-toggle.active .icon-bar:nth-of-type(3) {
+    opacity: 0; }
+  .navbar-toggle.active .icon-bar:nth-of-type(4) {
+    transform: rotate(-45deg);
+    top: -6px; }
+  .navbar-toggle--inactive .icon-bar--last {
+    width: 80%;
+    float: right; }
+  .navbar-toggle:focus {
+    outline: 0; }
+

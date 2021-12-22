@@ -1,0 +1,33 @@
+#drupal-off-canvas {
+  box-sizing: initial;
+
+  .inline-block-list.nav,
+  .card-body .links.nav {
+    display: block;
+  }
+
+  textarea:not(.js-off-canvas-computed-ignore),
+  select:not(.js-off-canvas-computed-ignore) {
+    background: #ffffff;
+    color: #595959;
+  }
+
+  input {
+    &[type="date"]:not(.js-off-canvas-computed-ignore),
+    &[type="datetime"]:not(.js-off-canvas-computed-ignore),
+    &[type="datetime-local"]:not(.js-off-canvas-computed-ignore),
+    &[type="email"]:not(.js-off-canvas-computed-ignore),
+    &[type="month"]:not(.js-off-canvas-computed-ignore),
+    &[type="number"]:not(.js-off-canvas-computed-ignore),
+    &[type="password"]:not(.js-off-canvas-computed-ignore),
+    &[type="search"]:not(.js-off-canvas-computed-ignore),
+    &[type="tel"]:not(.js-off-canvas-computed-ignore),
+    &[type="text"]:not(.js-off-canvas-computed-ignore),
+    &[type="time"]:not(.js-off-canvas-computed-ignore),
+    &[type="url"]:not(.js-off-canvas-computed-ignore),
+    &[type="week"]:not(.js-off-canvas-computed-ignore) {
+      background: #ffffff;
+      color: #595959;
+    }
+  }
+}

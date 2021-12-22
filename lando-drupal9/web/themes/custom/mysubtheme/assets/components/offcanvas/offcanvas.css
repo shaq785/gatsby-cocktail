@@ -1,0 +1,13 @@
+#drupal-off-canvas {
+  box-sizing: initial; }
+  #drupal-off-canvas .inline-block-list.nav,
+  #drupal-off-canvas .card-body .links.nav {
+    display: block; }
+  #drupal-off-canvas textarea:not(.js-off-canvas-computed-ignore),
+  #drupal-off-canvas select:not(.js-off-canvas-computed-ignore) {
+    background: #ffffff;
+    color: #595959; }
+  #drupal-off-canvas input[type="date"]:not(.js-off-canvas-computed-ignore), #drupal-off-canvas input[type="datetime"]:not(.js-off-canvas-computed-ignore), #drupal-off-canvas input[type="datetime-local"]:not(.js-off-canvas-computed-ignore), #drupal-off-canvas input[type="email"]:not(.js-off-canvas-computed-ignore), #drupal-off-canvas input[type="month"]:not(.js-off-canvas-computed-ignore), #drupal-off-canvas input[type="number"]:not(.js-off-canvas-computed-ignore), #drupal-off-canvas input[type="password"]:not(.js-off-canvas-computed-ignore), #drupal-off-canvas input[type="search"]:not(.js-off-canvas-computed-ignore), #drupal-off-canvas input[type="tel"]:not(.js-off-canvas-computed-ignore), #drupal-off-canvas input[type="text"]:not(.js-off-canvas-computed-ignore), #drupal-off-canvas input[type="time"]:not(.js-off-canvas-computed-ignore), #drupal-off-canvas input[type="url"]:not(.js-off-canvas-computed-ignore), #drupal-off-canvas input[type="week"]:not(.js-off-canvas-computed-ignore) {
+    background: #ffffff;
+    color: #595959; }
+

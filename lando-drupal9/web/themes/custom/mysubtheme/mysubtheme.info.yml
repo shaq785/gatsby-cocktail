@@ -1,0 +1,37 @@
+name: mySubTheme
+description: A theme based on bootstrap_storybook.
+screenshot: screenshot.png
+core_version_requirement: ^8 || ^9
+# version: VERSION
+engine: twig
+type: theme
+base theme: bootstrap_storybook
+
+regions:
+  navbar_branding: 'Navbar branding'
+  navbar_left:  'Navbar left'
+  navbar_right: 'Navbar right'
+  header: 'Header'
+  content: 'Content'
+  page_bottom: 'Page bottom'
+  footer: 'Footer'
+
+libraries:
+  - mysubtheme/style
+
+libraries-override:
+  bootstrap_storybook/bootstrap: false
+  bootstrap_storybook/style: false
+
+ckeditor_stylesheets:
+  - assets/css/main.style.css
+
+components:
+  namespaces:
+    mysubtheme: ./src/components
+    critical: ./assets/css/critical
+
+# Information added by Drupal.org packaging script on 2021-09-20
+version: '3.2.11'
+project: 'bootstrap_storybook'
+datestamp: 1632149926

@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Template for the branding block.
+ */
+#}
+{% embed '@mysubtheme/block/block.twig' %}
+
+{% block content %}
+  {% include '@mysubtheme/navbar/navbar-brand.twig' with {
+    text: site_name,
+    slogan: site_slogan,
+    image: site_logo,
+    width: 30,
+    height: 'auto',
+    path: path('<front>'),
+    alt: elements.content.site_name['#markup'] ~ ' logo' ,
+  } %}
+{% endblock %}
+
+{% endembed %}

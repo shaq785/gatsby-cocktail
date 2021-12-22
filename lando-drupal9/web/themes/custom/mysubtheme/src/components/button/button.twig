@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Template for a button component.
+ *
+ * Available config:
+ * - type: primary | secondary | success | danger | warning | info | light | dark & rest of bootstrap classes
+ * - outline: true | false
+ * - tag: button, a, input
+ * - value: string
+ * - button_attributes: Attributes array.
+ */
+#}
+{{ attach_library('mysubtheme/button') }}
+
+{% if button_utility_classes is not defined %}
+  {% set button_utility_classes = [] %}
+{% endif %}
+
+{% set button_classes = [
+  'btn',
+  (type ? 'btn-' ~ type),
+]|merge(button_utility_classes) %}
+
+<button{{ attributes.addClass(button_classes) }}>
+  {% block button_content %}
+    {{ button_content }}
+  {% endblock %}
+</button>
